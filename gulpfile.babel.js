@@ -1,14 +1,13 @@
-var path = require('path');
-var estorePreprocessor = require('estore-preprocessor');
-var gulp = require('gulp');
-var gulpPlumber = require('gulp-plumber');
-var gulpPostcss = require('gulp-postcss');
-var gulpSourcemaps = require('gulp-sourcemaps');
+'use strict';
+const estorePreprocessor = require('estore-preprocessor');
+const gulp = require('gulp');
+const gulpPlumber = require('gulp-plumber');
+const gulpPostcss = require('gulp-postcss');
 
 gulp.task('styles', () => {
 	return gulp.src('css/index.css')
 		.pipe(gulpPlumber())
-		.pipe(gulpPostcss([estorePreprocessor({path: 'css/client'})]))
+		.pipe(gulpPostcss([estorePreprocessor({path: 'css'})]))
 		.pipe(gulp.dest('build'));
 });
 

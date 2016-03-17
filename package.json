@@ -1,9 +1,9 @@
 {
-  "name": "estore-landingpages",
+  "name": "landing-page-form",
   "version": "1.0.0",
   "description": "Viskan Landingpages",
   "license": "MIT",
-  "repository": "",
+  "repository": "viskan/landing-page-form",
   "author": {
     "email": "info@viskan.se",
     "name": "Viskan Distanshandel System AB",
@@ -12,18 +12,13 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "estore-preprocessor": "^3.1.2",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.0",
-    "gulp-sourcemaps": "^1.6.0"
-  },
-  "dependencies": {
+    "gulp-sourcemaps": "^1.6.0",
+    "suitcss-base": "^1.0.2",
     "suitcss-components": "^1.0.1",
     "suitcss-utils-layout": "^1.0.1",
     "suitcss-utils-size": "^1.0.2"
