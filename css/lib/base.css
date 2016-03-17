@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,600,800);
+
+:root {
+	--base-background-color: var(--color-white);
+	--base-color: var(--color-charcoal);
+	--base-font-family: 'Open sans', sans-serif;
+	--base-font-size: 16px;
+	--base-line-height: 1.4;
+	--base-link-color: var(--color-deep-blue);
+	--base-link-color-hover: var(--color-dark-blue);
+	--base-font: var(--base-font-size)/var(--base-line-height) var(--base-font-family);
+	--base-max-width: 1280px;
+	--base-transition: all 0.3s ease-out;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font: var(--base-font);
+	color: var(--base-color);
+	background-color: var(--base-background-color);
+}
+
+a {
+	transition: var(--base-transition);
+	text-decoration: none;
+	color: var(--base-link-color);
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: var(--base-link-color-hover);
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}

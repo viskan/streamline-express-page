@@ -1,0 +1,41 @@
+.Header {
+	width: 100%;
+	position: relative;
+	padding: 20px;
+	border-bottom: #363636 1px solid;
+}
+
+.Container {
+	width: auto;
+	padding: 0 20px;
+}
+
+.Article .Article-img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.Article-header {
+	padding-bottom: 20px;
+}
+
+.FormField:not(:last-of-type) {
+	margin: 10px 0;
+}
+
+.FormField label {
+	font-weight: bold;
+}
+
+.FormField input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]):not([type=button]) {
+	line-height: 1.4em;
+	border-radius: 2px;
+	border: 1px solid #7f7f7f;
+	padding: .4em;
+	width: 100%;
+}
+
+.Form .Button {
+	width: 50%;
+	margin-top: 20px;
+}

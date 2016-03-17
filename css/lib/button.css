@@ -1,0 +1,47 @@
+:root {
+	--Button-border-radius: 2px;
+	--Button-transition: var(--base-transition);
+	--Button-primary-background: var(--color-deep-blue);
+	--Button-primary-hover-background: color(var(--Button-primary-background) tint(20%));
+	--Button-primary-border: 0px solid var(--color-dark-blue);
+	--Button-primary-color: var(--color-white);
+	--Button-primary-hover-color: var(--color-white);
+	--Button-success-background: var(--color-green);
+	--Button-success-hover-background: color(var(--Button-success-background) tint(10%));
+	--Button-success-border: var(--color-deep-green);
+	--Button-success-color: var(--color-white);
+	--Button-warning-background: var(--color-orange);
+	--Button-warning-hover-background: color(var(--Button-warning-background) tint(10%));
+	--Button-warning-border: var(--color-deep-orange);
+	--Button-warning-color: var(--color-white);
+	--Button-danger-background: var(--color-red);
+	--Button-danger-hover-background: color(var(--Button-danger-background) tint(10%));
+	--Button-danger-border: var(--color-deep-red);
+	--Button-danger-color: var(--color-white);
+}
+
+.Button {
+	border-radius: var(--Button-border-radius);
+	transition: var(--Button-transition);
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus,
+	&:active {
+		outline: 0;
+		transition: var(--Button-transition);
+	}
+}
+
+.Button--primary {
+	color: var(--Button-primary-color);
+	background-color: var(--Button-primary-background);
+	border: var(--Button-primary-border);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--Button-primary-hover-color);
+		background-color: var(--Button-primary-hover-background);
+	}
+}

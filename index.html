@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Viskan LandingPage</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="build/index.css">
+	</head>
+	<body>
+		<header class="Header">
+			<div class="Logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="Container">
+			<div class="Grid Grid--withGutter">
+				<div class="Grid-cell u-size4of6">
+					<article class="Article">
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of6">
+								<figure class="Article-img">
+									<img src="img/MZ7874_front_normal.png"  alt="CONTROL FREAK SERUM"/>
+								</figure>
+							</div>
+							<div class="Grid-cell u-size3of6">
+								<header class="Article-header">
+									<h1 class="Article-title">CONTROL FREAK SERUM</h1>
+									<span class="Article-artNo">Artikelnummer:<strong>MZ7874</strong></span>
+								</header>
+								<div class="Article-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+								</div>
+								<div class="Article-prices">
+									<h2>Pris: 240kr</h2>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="Grid-cell u-size2of6">
+					<section class="FormWrapper">
+						<h1 class="Form-heading">Beställ</h1>
+						<form id="Form" class='Form' name='form' method='POST' action='http://api.viskan.com.dev.stage.viskan.com/cxf/landingpages/purchases' accept-charset='UTF-8'>
+						<input type='hidden' name='merchant' value="C4E159A0-3D92-475B-B338-C148475A7C8C"></input>
+							<input type='hidden' name='page' value='regular-order'></input>
+							<input type='hidden' name='country' value='SE'></input>
+							<div class="FormField InputField">
+								<label class="FormField-label">Personnummer</label>
+								<div class="FormField-controls">
+									<input name='socialSecurityNumber' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Förnamn</label>
+								<div class="FormField-controls">
+									<input name='firstName' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Efternamn</label>
+								<div class="FormField-controls">
+									<input name='lastName' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Adress</label>
+								<div class="FormField-controls">
+									<input name='invoiceAddress' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Postnummer</label>
+								<div class="FormField-controls">
+									<input name='invoiceZipcode' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Stad</label>
+								<div class="FormField-controls">
+									<input name='invoiceCity' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Email</label>
+								<div class="FormField-controls">
+									<input name='email' required="true"></input>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Telefonnummer</label>
+								<div class="FormField-controls">
+									<input name='cellphone' required="true"></input>
+								</div>
+							</div>
+
+							<button class="Button Button--primary" type="submit">Beställ</button>
+						</form>
+				</section>
+				</div>
+			</div>
+		</div>
+		<footer>
+		</footer>
+	</body>
+</html>
