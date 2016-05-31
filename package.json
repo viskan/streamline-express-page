@@ -1,9 +1,9 @@
 {
   "name": "landing-page-form",
   "version": "1.0.0",
-  "description": "Viskan Landingpages",
+  "description": "estore-express-page",
   "license": "MIT",
-  "repository": "viskan/landing-page-form",
+  "repository": "viskan/estore-express-page",
   "author": {
     "email": "info@viskan.se",
     "name": "Viskan Distanshandel System AB",
