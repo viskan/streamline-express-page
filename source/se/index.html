@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Viskan eStore express</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../index.css">
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<header class="Header">
+			<div class="Logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+		<div class="Container">
+			<div class="Grid Grid--withGutter">
+				<div class="Grid-cell u-md-size4of6">
+					<article class="Article">
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-md-size3of6">
+								<figure class="Article-img">
+									<img src="img/MZ6660_front_normal.png" alt="JEWEL"/>
+								</figure>
+							</div>
+							<div class="Grid-cell u-md-size3of6">
+								<header class="Article-header">
+									<h1 class="Article-title">JEWEL</h1>
+									<span class="Article-artNo">Artikelnummer:<strong> MZ6660</strong></span>
+								</header>
+								<div class="Article-desc">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+								</div>
+								<div class="Article-prices">
+									<h2>Pris: 158 kr</h2>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="Grid-cell u-md-size2of6">
+					<section class="FormWrapper">
+						<h1 class="Form-heading">Beställ</h1>
+						<form id="Form" class='Form' name='form' method='POST' action='https://post.landingpages.se/purchases' accept-charset='UTF-8'>
+							<input type='hidden' name='merchant' value="37B07D7E-AA5F-456D-B852-C238107A6343"/>
+							<input type='hidden' name='page' value='regular-order'/>
+							<input type='hidden' name='country' value='SE'/>
+							<div class="FormField InputField">
+								<label class="FormField-label">Personnummer</label>
+								<div class="FormField-controls">
+									<input name='socialSecurityNumber' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Förnamn</label>
+								<div class="FormField-controls">
+									<input name='firstName' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Efternamn</label>
+								<div class="FormField-controls">
+									<input name='lastName' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Adress</label>
+								<div class="FormField-controls">
+									<input name='invoiceAddress' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Postnummer</label>
+								<div class="FormField-controls">
+									<input name='invoiceZipcode' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Stad</label>
+								<div class="FormField-controls">
+									<input name='invoiceCity' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Email</label>
+								<div class="FormField-controls">
+									<input name='email' required="true"/>
+								</div>
+							</div>
+							<div class="FormField InputField">
+								<label class="FormField-label">Telefonnummer</label>
+								<div class="FormField-controls">
+									<input name='cellphone' required="true"/>
+								</div>
+							</div>
+							<div class="Payment">
+								<div class="Payment-title">Betalsätt</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="Faktura" value="Faktura" checked="">
+										<label for="Faktura">Faktura</label>
+									</div>
+								</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="VISA" value="VISA">
+										<label for="VISA">VISA</label>
+									</div>
+								</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="MC" value="MC">
+										<label for="MC">MasterCard</label>
+									</div>
+								</div>
+							</div>
+							<button class="Button Button--primary" type="submit">Beställ</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
