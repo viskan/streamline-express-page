@@ -19,12 +19,17 @@
 	padding-bottom: 20px;
 }
 
-.FormField:not(:last-of-type) {
+.FormField:not(.RadioField) {
 	margin: 10px 0;
 }
 
-.FormField label {
+.InputField label {
 	font-weight: bold;
+}
+
+.RadioField input,
+.RadioField label {
+	cursor: pointer;
 }
 
 .FormField input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]):not([type=button]) {
@@ -38,4 +43,9 @@
 .Form .Button {
 	width: 50%;
 	margin-top: 20px;
+}
+
+.Payment-title {
+	margin: 10px 0 5px 0;
+	font-weight: bold;
 }

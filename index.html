@@ -48,63 +48,79 @@
 					<section class="FormWrapper">
 						<h1 class="Form-heading">Beställ</h1>
 						<form id="Form" class='Form' name='form' method='POST' action='https://post-stage.landingpages.se/purchases' accept-charset='UTF-8'>
-							<input type='hidden' name='merchant' value="C4E159A0-3D92-475B-B338-C148475A7C8C"></input>
-							<input type='hidden' name='page' value='regular-order'></input>
-							<input type='hidden' name='country' value='SE'></input>
+							<input type='hidden' name='merchant' value="C4E159A0-3D92-475B-B338-C148475A7C8C"/>
+							<input type='hidden' name='page' value='regular-order'/>
+							<input type='hidden' name='country' value='SE'/>
 							<div class="FormField InputField">
 								<label class="FormField-label">Personnummer</label>
 								<div class="FormField-controls">
-									<input name='socialSecurityNumber' required="true"></input>
+									<input name='socialSecurityNumber' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Förnamn</label>
 								<div class="FormField-controls">
-									<input name='firstName' required="true"></input>
+									<input name='firstName' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Efternamn</label>
 								<div class="FormField-controls">
-									<input name='lastName' required="true"></input>
+									<input name='lastName' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Adress</label>
 								<div class="FormField-controls">
-									<input name='invoiceAddress' required="true"></input>
+									<input name='invoiceAddress' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Postnummer</label>
 								<div class="FormField-controls">
-									<input name='invoiceZipcode' required="true"></input>
+									<input name='invoiceZipcode' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Stad</label>
 								<div class="FormField-controls">
-									<input name='invoiceCity' required="true"></input>
+									<input name='invoiceCity' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Email</label>
 								<div class="FormField-controls">
-									<input name='email' required="true"></input>
+									<input name='email' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
 								<label class="FormField-label">Telefonnummer</label>
 								<div class="FormField-controls">
-									<input name='cellphone' required="true"></input>
+									<input name='cellphone' required="true"/>
 								</div>
 							</div>
-							<div class="FormField">
-								<label class="FormField-label">Betalsätt</label>
-								<p><input type="radio" name="paymentMethod" value="Faktura" checked> Faktura</input></p>
-								<p><input type="radio" name="paymentMethod" value="VISA"> VISA</input></p>
-								<p><input type="radio" name="paymentMethod" value="MC"> MasterCard</input></p>
+							<div class="Payment">
+								<div class="Payment-title">Betalsätt</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="Faktura" value="Faktura" checked="">
+										<label for="Faktura">Faktura</label>
+									</div>
+								</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="VISA" value="VISA">
+										<label for="VISA">VISA</label>
+									</div>
+								</div>
+								<div class="FormField RadioField">
+									<div class="FormField-control">
+										<input type="radio" name="paymentMethod" id="MC" value="MC">
+										<label for="MC">MasterCard</label>
+									</div>
+								</div>
 							</div>
+
 							<button class="Button Button--primary" type="submit">Beställ</button>
 						</form>
 					</section>
