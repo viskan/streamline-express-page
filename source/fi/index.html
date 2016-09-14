@@ -6,7 +6,7 @@
 		<title>Viskan eStore express</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="build/index.css">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -30,15 +30,16 @@
 							<div class="Grid-cell u-md-size3of6">
 								<header class="Article-header">
 									<h1 class="Article-title">JEWEL</h1>
-									<span class="Article-artNo">Artikelnummer:<strong> MZ6660</strong></span>
+									<span class="Article-artNo">Tuotenumero:<strong> MZ6660</strong></span>
 								</header>
 								<div class="Article-desc">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+									<p>Torjuu karkeutta ja suoristaa kiharat. Tämä kevyt öljytön seerumi suojaa kosteudelta, suoristaa hiukset ja palauttaa kiillon hiuksiisi.</p>
+									<p><b>Käyttöohjeet:</b><br />
+									Levitä tasaisesti kosteisiin tai kuiviin hiuksiin ja muotoile normaalisti. Lämpö(esim. hiustenkuivaajan käyttö) lisää seerumin tehoa.
+									</p>
 								</div>
 								<div class="Article-prices">
-									<h2>Pris: 158 kr</h2>
+									<h2>Hinta: 16,90€</h2>
 								</div>
 							</div>
 						</div>
@@ -46,65 +47,60 @@
 				</div>
 				<div class="Grid-cell u-md-size2of6">
 					<section class="FormWrapper">
-						<h1 class="Form-heading">Beställ</h1>
+						<h1 class="Form-heading">Tilauslomake</h1>
 						<form id="Form" class='Form' name='form' method='POST' action='https://post.landingpages.se/purchases' accept-charset='UTF-8'>
 							<input type='hidden' name='merchant' value="37B07D7E-AA5F-456D-B852-C238107A6343"/>
 							<input type='hidden' name='page' value='regular-order'/>
-							<input type='hidden' name='country' value='SE'/>
+							<input type='hidden' name='country' value='FI'/>
+
 							<div class="FormField InputField">
-								<label class="FormField-label">Personnummer</label>
-								<div class="FormField-controls">
-									<input name='socialSecurityNumber' required="true"/>
-								</div>
-							</div>
-							<div class="FormField InputField">
-								<label class="FormField-label">Förnamn</label>
+								<label class="FormField-label">Etunimi</label>
 								<div class="FormField-controls">
 									<input name='firstName' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Efternamn</label>
+								<label class="FormField-label">Sukunimi</label>
 								<div class="FormField-controls">
 									<input name='lastName' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Adress</label>
+								<label class="FormField-label">Katuosoite</label>
 								<div class="FormField-controls">
 									<input name='invoiceAddress' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Postnummer</label>
+								<label class="FormField-label">Postinumero</label>
 								<div class="FormField-controls">
 									<input name='invoiceZipcode' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Stad</label>
+								<label class="FormField-label">Postitoimipaikka</label>
 								<div class="FormField-controls">
 									<input name='invoiceCity' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Email</label>
+								<label class="FormField-label">Sähköpostiosoite</label>
 								<div class="FormField-controls">
 									<input name='email' required="true"/>
 								</div>
 							</div>
 							<div class="FormField InputField">
-								<label class="FormField-label">Telefonnummer</label>
+								<label class="FormField-label">Puhelinnumero</label>
 								<div class="FormField-controls">
 									<input name='cellphone' required="true"/>
 								</div>
 							</div>
 							<div class="Payment">
-								<div class="Payment-title">Betalsätt</div>
+								<div class="Payment-title">Maksutavat</div>
 								<div class="FormField RadioField">
 									<div class="FormField-control">
-										<input type="radio" name="paymentMethod" id="Faktura" value="Faktura" checked="">
-										<label for="Faktura">Faktura</label>
+										<input type="radio" name="paymentMethod" id="Lasku" value="Lasku" checked="">
+										<label for="Lasku">Lasku</label>
 									</div>
 								</div>
 								<div class="FormField RadioField">
@@ -120,8 +116,7 @@
 									</div>
 								</div>
 							</div>
-
-							<button class="Button Button--primary" type="submit">Beställ</button>
+							<button class="Button Button--primary" type="submit">Tilaa</button>
 						</form>
 					</section>
 				</div>
