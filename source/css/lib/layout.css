@@ -191,11 +191,20 @@ li:before {
 	text-align: center;
 }
 
-.Result {
+.Result,
+.Start {
 	margin-top: 25vh;
 	text-align: center;
 
 	.Button {
 		margin-top: 20px;
+	}
+}
+
+.Start {
+	margin-top: 40px;
+
+	> div:first-of-type {
+		margin-top: 40px;
 	}
 }
