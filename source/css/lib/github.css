@@ -7,8 +7,8 @@
 }
 
 .github-svg {
-	fill: #151513;
-	color: #fff;
+	fill: #162a42;
+	color: var(--color-white);
 	position: absolute;
 	top: 0;
 	border: 0;

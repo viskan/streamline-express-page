@@ -1,12 +1,12 @@
 {
-  "name": "estore-express-page",
+  "name": "streamline-express-page",
   "version": "1.0.0",
-  "description": "estore-express-page",
+  "description": "Viskan Streamline Express Page",
   "license": "MIT",
-  "repository": "viskan/estore-express-page",
+  "repository": "viskan/streamline-express-page",
   "author": {
     "email": "info@viskan.se",
-    "name": "Viskan Distanshandel System AB",
+    "name": "Viskan System AB",
     "url": "http://viskan.se"
   },
   "engines": {

@@ -1,13 +1,25 @@
+.Header,
+.Container {
+	z-index: 2;
+}
+
 .Header {
-	width: 100%;
 	position: relative;
+	width: 100%;
 	padding: 20px;
-	border-bottom: #363636 1px solid;
+	text-align: center;
+}
+
+.Logo {
+	margin: 0 auto;
+	max-width: 200px;
 }
 
 .Container {
-	width: auto;
+	position: relative;
+	margin: 0 auto;
 	padding: 0 20px;
+	max-width: var(--base-max-width);
 }
 
 .Article .Article-img {
@@ -23,29 +35,167 @@
 	margin: 10px 0;
 }
 
-.InputField label {
-	font-weight: bold;
-}
-
 .RadioField input,
 .RadioField label {
 	cursor: pointer;
 }
 
 .FormField input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]):not([type=button]) {
-	line-height: 1.4em;
-	border-radius: 2px;
-	border: 1px solid #7f7f7f;
-	padding: .4em;
 	width: 100%;
+	max-width: 400px;
+	padding: 8px 16px;
+	background: rgba(255, 255, 255, 0.75);
+	color: var(--color-charcoal);
+	border-radius: 4px;
+	border: 0;
+}
+
+.FormField input::placeholder {
+	font-size: 0.9rem;
+	color: var(--color-medium-gray);
 }
 
 .Form .Button {
-	width: 50%;
-	margin-top: 20px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.Form-heading {
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.Payment {
+	max-width: 400px;
+	margin: 20px auto 20px auto;
+	font-weight: 500;
 }
 
 .Payment-title {
-	margin: 10px 0 5px 0;
+	margin-bottom: 5px;
 	font-weight: bold;
+}
+
+.Payment .RadioField {
+	font-size: 0.9em;
+}
+
+.Payment input {
+	margin-right: 5px;
+}
+
+.Payment label {
+	display: block;
+	width: 100%;
+	padding: 4px 16px;
+	margin: 10px 0;
+	background: rgba(255, 255, 255, 0.75);
+	color: var(--color-charcoal);
+	border-radius: 4px;
+	line-height: 35px;
+	text-align: left;
+}
+
+.Payment-image {
+	float: right;
+}
+
+.Content {
+	padding-top: 70px;
+	margin-bottom: 40px;
+
+	@media (--lg-viewport) {
+		margin-bottom: 0;
+	}
+}
+
+.Product {
+	margin-bottom: 40px;
+	text-align: center;
+
+	@media (--lg-viewport) {
+		margin-bottom: 0;
+	}
+}
+
+.Product-image {
+	max-width: 250px;
+	margin-bottom: 20px;
+}
+
+.Product-name {
+	font-size: 3.3rem;
+	text-transform: uppercase;
+}
+
+.Product-price {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	> span {
+		color: var(--color-light-blue);
+	}
+}
+
+.Product-description {
+	max-width: 450px;
+	margin: 0 auto;
+	font-size: 0.9rem;
+	margin-bottom: 20px;
+}
+
+ul {
+	margin-bottom: 20px;
+}
+
+li:before {
+	content: "\2714";
+	margin-right: 5px;
+	color: var(--color-light-blue);
+}
+
+.Button {
+	padding: 10px 20px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: var(--color-deep-blue);
+	color: var(--color-white);
+	border: 0;
+	border-radius: 20px;
+
+	&:hover {
+		color: var(--color-white);
+		background: var(--color-dark-blue);
+	}
+}
+
+.Button--submit {
+	font-size: 1.2em;
+}
+
+.Button--klarna {
+	font-size: 1rem;
+	font-weight: 500;
+
+	div {
+		margin-bottom: 5px;
+	}
+}
+
+.FormWrapper {
+	text-align: center;
+}
+
+.Result {
+	margin-top: 25vh;
+	text-align: center;
+
+	.Button {
+		margin-top: 20px;
+	}
 }
