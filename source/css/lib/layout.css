@@ -120,8 +120,7 @@
 }
 
 .Product-image {
-	max-width: 250px;
-	margin-bottom: 20px;
+	max-height: 250px;
 }
 
 .Product-name {
