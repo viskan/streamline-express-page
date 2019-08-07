@@ -56,9 +56,15 @@ workflows:
   install-and-build:
     jobs:
       - install
+          filters:
+            tags:
+              only: /v.*/
       - build-docker-image:
           requires:
             - install
+          filters:
+            tags:
+              only: /v.*/
       - push-docker-image:
           requires:
             - build-docker-image
