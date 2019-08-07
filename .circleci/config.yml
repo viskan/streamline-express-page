@@ -11,7 +11,7 @@ jobs:
       - image: circleci/node:8.16.0
     steps:
       - checkout
-      - env
+      - run: env
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -55,11 +55,12 @@ workflows:
   version: 2
   install-and-build:
     jobs:
-      - install:
+      - install
       - build-docker-image:
           requires:
             - install
       - push-docker-image:
+          requires:
             - build-docker-image
           filters:
             branches:
