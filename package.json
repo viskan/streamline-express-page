@@ -10,7 +10,7 @@
     "url": "http://viskan.se"
   },
   "scripts": {
-    "dev": "npm-run-all watch start",
+    "dev": "npm-run-all --parallel watch start",
     "watch": "rimraf dist && parcel watch --no-source-maps source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
     "build": "rimraf dist && parcel build --no-source-maps --no-content-hash source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
     "start": "serve dist",
