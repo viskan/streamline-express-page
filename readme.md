@@ -7,7 +7,7 @@ https://demo.viskan.se/streamline-express/
 
 ## Install
 
-Make sure you have [Node.js](https://nodejs.org/en/) version 8 installed before doing these steps.
+Make sure you have [Node.js](https://nodejs.org/en/) installed before doing these steps.
 
 ```shell
 $ npm install
