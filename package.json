@@ -11,8 +11,8 @@
   },
   "scripts": {
     "dev": "npm-run-all --parallel watch start",
-    "watch": "rimraf dist && parcel watch --no-source-maps source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
-    "build": "rimraf dist && parcel build --no-source-maps --no-content-hash source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
+    "watch": "rimraf dist && node bundle --watch",
+    "build": "rimraf dist && node bundle",
     "start": "serve dist",
     "build:start": "run-s build start"
   },
