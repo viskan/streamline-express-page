@@ -20,7 +20,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
           paths:
             - node_modules
-      - run: npx gulp
+      - run: npm run build
   build-docker-image:
     executor: docker-builder
     steps:
