@@ -9,19 +9,37 @@
     "name": "Viskan System AB",
     "url": "http://viskan.se"
   },
+  "scripts": {
+    "dev": "npm-run-all --parallel watch start",
+    "watch": "rimraf dist && parcel watch --no-source-maps source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
+    "build": "rimraf dist && parcel build --no-source-maps --no-content-hash source/index.html source/fi/index.html source/se/index.html source/se-klarna-checkout/index.html",
+    "start": "serve dist",
+    "build:start": "run-s build start"
+  },
   "engines": {
     "node": ">=0.10.0"
   },
   "devDependencies": {
-    "estore-preprocessor": "^3.1.2",
-    "gulp": "^3.9.1",
-    "gulp-changed": "^1.3.2",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.1.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "suitcss-base": "^1.0.2",
-    "suitcss-components": "^1.0.1",
+    "autoprefixer": "9.6.1",
+    "browserslist": "^4.6.6",
+    "cssnano": "4.1.10",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "postcss": "7.0.17",
+    "postcss-apply": "0.12.0",
+    "postcss-cssnext": "3.1.0",
+    "postcss-custom-properties": "9.0.2",
+    "postcss-fontpath": "1.0.0",
+    "postcss-for": "2.1.1",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "postcss-nested": "4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^2.6.3",
+    "serve": "^11.1.0",
+    "suitcss-base": "^5.0.0",
+    "suitcss-components": "^2.0.0",
     "suitcss-utils-layout": "^1.0.1",
-    "suitcss-utils-size": "^1.0.2"
+    "suitcss-utils-size": "^2.0.1"
   }
 }

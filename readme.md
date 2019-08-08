@@ -11,13 +11,13 @@ Make sure you have [Node.js](https://nodejs.org/en/) version 8 installed before 
 
 ```shell
 $ npm install
-$ npx gulp
+$ npm run build
 ```
 
 For development mode:
 
 ```shell
-$ npx gulp watch
+$ npm run dev
 ```
 
 
