@@ -10,22 +10,26 @@
     "url": "http://viskan.se"
   },
   "scripts": {
-    "dev": "npm-run-all --parallel watch start",
-    "watch": "rimraf dist && node bundle --watch",
-    "build": "rimraf dist && node bundle",
+    "cleanup": "rimraf dist",
+    "watch:css": "postcss source/index.css -o dist/index.css --watch",
+    "watch:html": "cpx \"source/**/*.{html,png,jpg}\" dist --watch",
+    "build:css": "postcss source/index.css -o dist/index.css --m",
+    "build:html": "cpx \"source/**/*.{html,png,jpg}\" dist",
+    "build:start": "run-s build start",
+    "build": "npm run cleanup && run-s build:html build:css && echo 'Success! Run \"npm start\" to serve the page locally",
     "start": "serve dist",
-    "build:start": "run-s build start"
+    "dev": "npm run cleanup && npm-run-all -p watch:html watch:css start"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "devDependencies": {
-    "browserslist": "4.6.6",
+    "cpx": "1.5.0",
     "cssnano": "4.1.10",
     "npm-run-all": "4.1.5",
-    "parcel-bundler": "1.12.3",
     "postcss": "7.0.17",
     "postcss-apply": "0.12.0",
+    "postcss-cli": "6.1.3",
     "postcss-cssnext": "3.1.0",
     "postcss-custom-properties": "9.0.2",
     "postcss-fontpath": "1.0.0",
@@ -33,7 +37,6 @@
     "postcss-import": "12.0.1",
     "postcss-loader": "3.0.0",
     "postcss-nested": "4.1.2",
-    "postcss-preset-env": "6.7.0",
     "rimraf": "2.6.3",
     "serve": "11.1.0",
     "suitcss-base": "5.0.0",
