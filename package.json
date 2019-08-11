@@ -16,7 +16,7 @@
     "build:css": "postcss source/index.css -o dist/index.css --m",
     "build:html": "cpx \"source/**/*.{html,png,jpg}\" dist",
     "build:start": "run-s build start",
-    "build": "npm run cleanup && run-s build:html build:css && echo 'Success! Run \"npm start\" to serve the page locally",
+    "build": "npm run cleanup && run-s build:html build:css && echo 'Success! Run \"npm start\" to serve the page locally'",
     "start": "serve dist",
     "dev": "npm run cleanup && npm-run-all -p watch:html watch:css start"
   },
