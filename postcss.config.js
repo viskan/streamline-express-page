@@ -6,7 +6,7 @@ module.exports = {
 		'postcss-nested': {},
 		'postcss-fontpath': {},
 		'postcss-custom-properties': {},
-		'cssnano': {autoprefixer: false},
-		'postcss-preset-env': {}
+		'postcss-cssnext': {},
+		'cssnano': {autoprefixer: false}
 	}
 };
