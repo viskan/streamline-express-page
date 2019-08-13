@@ -2,7 +2,7 @@
 
 [![CircleCI](https://img.shields.io/circleci/build/github/viskan/streamline-express-page?style=for-the-badge)](https://circleci.com/gh/viskan/workflows/streamline-express-page)
 
-https://demo.viskan.se/streamline-express/
+https://streamline-express-demo.viskan.com
 
 
 ## Install
