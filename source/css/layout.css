@@ -173,6 +173,10 @@ li:before {
 	}
 }
 
+.Button .Flag {
+	width: 20px;
+}
+
 .Button--submit {
 	font-size: 1.2em;
 }
@@ -183,6 +187,19 @@ li:before {
 
 	div {
 		margin-bottom: 5px;
+	}
+}
+
+.Button--dibs {
+	font-size: 1rem;
+	font-weight: 500;
+
+	div {
+		margin-bottom: 5px;
+	}
+
+	img {
+		width: 100px;
 	}
 }
 

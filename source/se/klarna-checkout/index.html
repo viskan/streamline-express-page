@@ -6,7 +6,7 @@
 		<title>Viskan Streamline Express</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./index.css">
+		<link rel="stylesheet" href="../../index.css">
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -14,7 +14,7 @@
 		<![endif]-->
 		<header class="Header">
 			<div class="Logo">
-				<img src="img/logo.png"/>
+				<img src="../../img/logo.png"/>
 			</div>
 			<a href="https://github.com/viskan/streamline-express-page" class="github-corner" aria-label="View source on Github" target="_blank">
 				<svg width="80" height="80" viewBox="0 0 250 250" class="github-svg" aria-hidden="true">
@@ -25,12 +25,29 @@
 			</a>
 		</header>
 		<div class="Container">
-			<div class="Start">
-				<h1>Viskan Streamline Express</h1>
-				<div><a class="Button" href="se/">Swedish form <img class="Flag" src="img/sweden.svg"/></a></div>
-				<div><a class="Button" href="fi/">Finnish form <img class="Flag" src="img/finland.svg"/></a></div>
-				<div><a class="Button" href="se/klarna-checkout/">Swedish Klarna Checkout <img class="Flag" src="img/sweden.svg"/></a></div>
-				<div><a class="Button" href="se/dibs-easy/">Swedish Dibs Easy <img class="Flag" src="img/sweden.svg"/></a></div>
+			<div class="Content">
+				<article class="Product">
+					<img class="Product-image" src="../../img/product.png"/>
+					<h1 class="Product-name">Viskan Fragrance</h1>
+					<div class="Product-price">Endast <span>158 kr</span> per månad!</div>
+					<div class="Product-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quasi commodi sapiente unde nam animi quisquam consequuntur ducimus suscipit repellendus.
+					</div>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Inventore deserunt</li>
+						<li>Dignissimos saepe hic molestias</li>
+					</ul>
+					<form id="Form" class="Form" name="form" method="POST" action="https://express.streamline.shop/purchases" accept-charset="UTF-8">
+						<input type="hidden" name="merchant" value="37B07D7E-AA5F-456D-B852-C238107A6343"/>
+						<input type="hidden" name="page" value="demo-v2-klarna-checkout-se"/>
+						<button class="Button Button--klarna" type="submit">
+							<div>Beställ nu och betala med</div>
+							<img src="../../img/klarna.svg" style="height: 32px"/>
+						</button>
+					</form>
+				</article>
 			</div>
 		</div>
 	</body>
