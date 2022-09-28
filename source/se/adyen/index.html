@@ -6,7 +6,7 @@
 		<title>Viskan Streamline Express</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../index.css">
+		<link rel="stylesheet" href="../../index.css">
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -14,7 +14,7 @@
 		<![endif]-->
 		<header class="Header">
 			<div class="Logo">
-				<img src="../img/logo.png"/>
+				<img src="../../img/logo.png"/>
 			</div>
 			<a href="https://github.com/viskan/streamline-express-page" class="github-corner" aria-label="View source on Github" target="_blank">
 				<svg width="80" height="80" viewBox="0 0 250 250" class="github-svg" aria-hidden="true">
@@ -29,7 +29,7 @@
 				<div class="Grid Grid--withGutter">
 					<div class="Grid-cell u-sizeFull u-lg-size1of2">
 						<article class="Product">
-							<img class="Product-image" src="../img/product.png"/>
+							<img class="Product-image" src="../../img/product.png"/>
 							<h1 class="Product-name">Viskan Fragrance</h1>
 							<div class="Product-price">Endast <span>158 kr</span> per månad!</div>
 							<div class="Product-description">
@@ -49,12 +49,7 @@
 							<div class="Form-heading">Beställ nu och spara pengar!</div>
 							<form id="Form" class="Form" name="form" method="POST" action="https://express.streamline.shop/purchases-v2" accept-charset="UTF-8">
 								<input type="hidden" name="merchant" value="37B07D7E-AA5F-456D-B852-C238107A6343"/>
-								<input type="hidden" name="page" value="demo-v2-form-se"/>
-								<div class="FormField InputField">
-									<div class="FormField-controls">
-										<input name="socialSecurityNumber" placeholder="Personnummer" required="true"/>
-									</div>
-								</div>
+								<input type="hidden" name="page" value="demo-v2-adyen-se"/>
 								<div class="FormField InputField">
 									<div class="FormField-controls">
 										<input name="firstName" placeholder="Förnamn" required="true"/>
@@ -83,41 +78,6 @@
 								<div class="FormField InputField">
 									<div class="FormField-controls">
 										<input name="email" placeholder="Email" required="true"/>
-									</div>
-								</div>
-								<div class="FormField InputField">
-									<div class="FormField-controls">
-										<input name="cellphone" placeholder="Telefonnummer" required="true"/>
-									</div>
-								</div>
-								<div class="Payment">
-									<div class="Payment-title">Betalsätt</div>
-									<div class="FormField RadioField">
-										<div class="FormField-control">
-											<label for="Faktura">
-												<input type="radio" name="paymentMethod" id="Faktura" value="Faktura" checked="">
-												Faktura
-												<img class="Payment-image" src="../img/invoice.png">
-											</label>
-										</div>
-									</div>
-									<div class="FormField RadioField">
-										<div class="FormField-control">
-											<label for="VISA">
-												<input type="radio" name="paymentMethod" id="VISA" value="VISA">
-												VISA
-												<img class="Payment-image" src="../img/visa.png">
-											</label>
-										</div>
-									</div>
-									<div class="FormField RadioField">
-										<div class="FormField-control">
-											<label for="MC">
-												<input type="radio" name="paymentMethod" id="MC" value="MC">
-												MasterCard
-												<img class="Payment-image" src="../img/mastercard.png">
-											</label>
-										</div>
 									</div>
 								</div>
 								<button class="Button Button--submit" type="submit">Beställ</button>
